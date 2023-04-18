@@ -75,13 +75,13 @@
           <h3 class="text-2xl font-semibold">Customer Information the App Collects</h3>
           For the "Generate discountable checkout link" / "Checkout link" function, in addition to the draft order information mentioned in the previous section, the app also collects the draft order's customer information, including customer name, customer email, customer shipping address and customer billing address.
           <br><br>
-          These customer information is needed to generate a checkout, which the checkout will then be populated with the customer name, email, shipping address and billing address, so the customer will not need to type them again when they access the checkout link generated.
+          These customer information is needed to generate a checkout, which the checkout will then be populated with the customer name, email, phone number, shipping address and billing address, so the customer will not need to type them again when they access the checkout link generated.
           <br><br>
-          These customer information (name, email, shipping address and billing address) is never stored in the app database, the app will request these information from Shopify every time a checkout link is generated, and they will be discarded once the checkout link is generated, these information are only kept in ephemeral Random Access Memory (RAM) during the generation of checkout link.
+          These customer information (name, email, phone number, shipping address and billing address) is never stored in the app database, the app will request these information from Shopify every time a checkout link is generated, and they will be discarded once the checkout link is generated, these information are only kept in ephemeral Random Access Memory (RAM) during the generation of checkout link.
           <br><br>
 
           <h3 class="text-2xl font-semibold">Data Retention Period</h3>
-          For customer data (customer name, email, shipping address and biling address), the data is discarded immediately right after the checkout link is generated, this data is never stored in the database.
+          For customer data (customer name, email, phone number, shipping address and biling address), the data is discarded immediately right after the checkout link is generated, this data is never stored in the database.
           <br><br>
           For the inventory deduction data (location ID, variant ID, inventory item ID, quantity), the data is stored in database until the draft (that is used for inventory deduction) is paid or completed, or until the merchant manually restore the deducted inventory using the app. ie. these data will be removed from the database when the draft order is completed, or when the merchant manually restore the deducted inventory using the app.
           <br><br>
